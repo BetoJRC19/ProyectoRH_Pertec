@@ -1,19 +1,19 @@
 ﻿@model ProyectoRH_Pertec.Models.Tempresafecha
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Eliminar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Delete</h2>
+<h2>@Html.ViewBag.Title</h2>
 
-<h3>Are you sure you want to delete this?</h3>
+<h3>¿Confirma que desea eliminarlo?</h3>
 <div>
-    <h4>Tempresafecha</h4>
+  
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.IEfechaingreso)
+            @Html.DisplayName("Fecha de ingreso: ")
         </dt>
 
         <dd>
@@ -21,7 +21,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.IEfechaegreso)
+            @Html.DisplayName("Fecha de engreso: ")
         </dt>
 
         <dd>
@@ -29,7 +29,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.IEmotivo)
+            @Html.DisplayName("Motivo de egreso: ")
         </dt>
 
         <dd>
@@ -37,11 +37,25 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Templeado.Enombre)
+            @Html.DisplayName("Número de cédula: ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Templeado.EempleadoID)
+        </dd>
+        <dt>
+            @Html.DisplayName("Nombre: ")
         </dt>
 
         <dd>
             @Html.DisplayFor(model => model.Templeado.Enombre)
+        </dd>
+        <dt>
+            @Html.DisplayName("Apellido: ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Templeado.Eapellido)
         </dd>
 
     </dl>
@@ -49,9 +63,9 @@
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
 
-        <div class="form-actions no-color">
-            <input type="submit" value="Delete" class="btn btn-default" /> |
-            @Html.ActionLink("Back to List", "Index")
-        </div>
+<div class="form-actions no-color">
+    <input type="submit" value="Eliminar" class="btn btn-default" /> |
+    @Html.ActionLink("Regresar al control de empleados", "Index")
+</div>
     }
 </div>

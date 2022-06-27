@@ -5,48 +5,6 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h1>Página en desarrollo</h1>
+<h1>Fuera de funcionamiento</h1>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.PEpuestoID)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PEfechainicio)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.PEfechafin)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Templeado.Enombre)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.PEpuestoID)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PEfechainicio)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.PEfechafin)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Templeado.Enombre)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-        </td>
-    </tr>
-}
-
-</table>

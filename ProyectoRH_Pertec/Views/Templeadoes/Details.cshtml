@@ -1,18 +1,17 @@
 ﻿@model ProyectoRH_Pertec.Models.Templeado
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Detalles";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Details</h2>
+<h2>@Html.ViewBag.Title</h2>
 
 <div>
-    <h4>Templeado</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Enombre)
+            @Html.DisplayName("Nombre: ")
         </dt>
 
         <dd>
@@ -20,7 +19,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Eapellido)
+            @Html.DisplayName("Primer apellido: ")
         </dt>
 
         <dd>
@@ -28,7 +27,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Eapellido2)
+            @Html.DisplayName("Segundo apellido: ")
         </dt>
 
         <dd>
@@ -36,7 +35,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Etelefono)
+            @Html.DisplayName("Número de teléfono: ")
         </dt>
 
         <dd>
@@ -44,7 +43,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Ecorreo)
+            @Html.DisplayName("Correo electrónico: ")
         </dt>
 
         <dd>
@@ -52,7 +51,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Tpuesto.Pnombre)
+            @Html.DisplayName("Puesto: ")
         </dt>
 
         <dd>
@@ -60,7 +59,7 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Tempresafecha.IEmotivo)
+            @Html.DisplayName("Motivo de egreso: ")
         </dt>
 
         <dd>
@@ -70,6 +69,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.EempleadoID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Editar", "Edit", new { id = Model.EempleadoID }) |
+    @Html.ActionLink("Regresar a empleados", "Index")
 </p>

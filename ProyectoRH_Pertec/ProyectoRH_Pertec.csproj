@@ -228,13 +228,9 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Templeadoes\Create.cshtml" />
-    <Content Include="Views\Templeadoes\Delete.cshtml" />
     <Content Include="Views\Templeadoes\Details.cshtml" />
     <Content Include="Views\Templeadoes\Edit.cshtml" />
     <Content Include="Views\Templeadoes\Index.cshtml" />
-    <Content Include="Views\Tempresafechas\Create.cshtml" />
-    <Content Include="Views\Tempresafechas\Delete.cshtml" />
-    <Content Include="Views\Tempresafechas\Details.cshtml" />
     <Content Include="Views\Tempresafechas\Edit.cshtml" />
     <Content Include="Views\Tempresafechas\Index.cshtml" />
     <Content Include="Views\Tpuestofechas\Create.cshtml" />
@@ -242,6 +238,8 @@
     <Content Include="Views\Tpuestofechas\Details.cshtml" />
     <Content Include="Views\Tpuestofechas\Edit.cshtml" />
     <Content Include="Views\Tpuestofechas\Index.cshtml" />
+    <Content Include="Views\Tempresafechas\Create.cshtml" />
+    <Content Include="Views\Tempresafechas\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

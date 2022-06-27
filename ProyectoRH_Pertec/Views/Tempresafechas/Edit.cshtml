@@ -1,11 +1,11 @@
 ﻿@model ProyectoRH_Pertec.Models.Tempresafecha
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Editar";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Edit</h2>
+<h2>@Html.ViewBag.Title</h2>
 
 
 @using (Html.BeginForm())
@@ -13,11 +13,11 @@
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Tempresafecha</h4>
+ 
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.IEfechaingreso, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.IEfechaingreso, "Fecha de ingreso: ", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.IEfechaingreso, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.IEfechaingreso, "", new { @class = "text-danger" })
@@ -25,7 +25,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.IEfechaegreso, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.IEfechaegreso, "Fecha de egreso: ", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.IEfechaegreso, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.IEfechaegreso, "", new { @class = "text-danger" })
@@ -33,7 +33,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.IEmotivo, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.IEmotivo, "Motido de egreso: ", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.EditorFor(model => model.IEmotivo, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.IEmotivo, "", new { @class = "text-danger" })
@@ -44,14 +44,14 @@
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <input type="submit" value="Guardar" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Regresar al control de empleados", "Index")
 </div>
 
 @section Scripts {

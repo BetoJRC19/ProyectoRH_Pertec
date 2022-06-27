@@ -1,37 +1,34 @@
 ﻿@model IEnumerable<ProyectoRH_Pertec.Models.Templeado>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Inicio";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>@Html.ViewBag.Title</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Registrar Nuevo Empleado", "Create")
 </p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Enombre)
+            @Html.DisplayName("Nombre")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Eapellido)
+            @Html.DisplayName("Primer apellido")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Eapellido2)
+            @Html.DisplayName("Segundo apellido")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Etelefono)
+            @Html.DisplayName("Número de teléfono")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Ecorreo)
+            @Html.DisplayName("Correo electrónico")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Tpuesto.Pnombre)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Tempresafecha.IEmotivo)
+            @Html.DisplayName("Puesto")
         </th>
         <th></th>
     </tr>
@@ -57,12 +54,8 @@
             @Html.DisplayFor(modelItem => item.Tpuesto.Pnombre)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Tempresafecha.IEmotivo)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EempleadoID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EempleadoID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EempleadoID })
+            @Html.ActionLink("Editar", "Edit", new { id=item.EempleadoID }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.EempleadoID }) 
         </td>
     </tr>
 }
