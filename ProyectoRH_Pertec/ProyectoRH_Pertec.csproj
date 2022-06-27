@@ -207,6 +207,14 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+    <Content Include="Scripts\Scripts SQL Base de datos\Cargar_datos_empleados.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\Cargar_datos_puestos.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\Cargar_datos_Tempresafecha.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\CrearBD.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\CrearTablaEmpleado.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\CrearTablaTempresafecha.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\CrearTablaTpuesto.sql" />
+    <Content Include="Scripts\Scripts SQL Base de datos\CrearTablaTpuestofecha.sql" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
