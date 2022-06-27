@@ -1,0 +1,70 @@
+﻿@model IEnumerable<ProyectoRH_Pertec.Models.Templeado>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Enombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Eapellido)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Eapellido2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Etelefono)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ecorreo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tpuesto.Pnombre)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Tempresafecha.IEmotivo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Enombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Eapellido)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Eapellido2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Etelefono)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Ecorreo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tpuesto.Pnombre)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tempresafecha.IEmotivo)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.EempleadoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.EempleadoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.EempleadoID })
+        </td>
+    </tr>
+}
+
+</table>

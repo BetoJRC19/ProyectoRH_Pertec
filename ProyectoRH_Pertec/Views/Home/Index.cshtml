@@ -1,0 +1,15 @@
+﻿
+    @{
+        ViewBag.Title = "Página principal";
+    }
+
+    <div class="jumbotron">
+        <img src="https://www.pertecglobal.com/media/logos/logo-brand-name-black.png" width="192" height="73" />
+        <h2> <B>Control del personal</B></h2>
+        <p>Sistema para gestionar las funciones típicas del departamento de recursos humanos</p>
+        <BR>
+        <BR>
+        <p> @Html.ActionLink("Empleados", "Index", "Templeadoes") >></p>
+        <p> @Html.ActionLink("Control de empleados", "Index", "Tempresafechas") >></p>
+        <p> @Html.ActionLink("Histórico depuestos por personal", "Index", "Tpuestofechas") >></p>
+    </div>

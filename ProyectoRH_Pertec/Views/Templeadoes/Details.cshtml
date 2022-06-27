@@ -1,0 +1,75 @@
+﻿@model ProyectoRH_Pertec.Models.Templeado
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Templeado</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Enombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Enombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Eapellido)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Eapellido)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Eapellido2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Eapellido2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Etelefono)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Etelefono)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Ecorreo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ecorreo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tpuesto.Pnombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tpuesto.Pnombre)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tempresafecha.IEmotivo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tempresafecha.IEmotivo)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EempleadoID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

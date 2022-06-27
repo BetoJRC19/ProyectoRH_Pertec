@@ -1,0 +1,52 @@
+﻿@model IEnumerable<ProyectoRH_Pertec.Models.Tempresafecha>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IEfechaingreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IEfechaegreso)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IEmotivo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Templeado.Enombre)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IEfechaingreso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IEfechaegreso)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IEmotivo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Templeado.Enombre)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IEempleadoID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IEempleadoID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.IEempleadoID })
+        </td>
+    </tr>
+}
+
+</table>
