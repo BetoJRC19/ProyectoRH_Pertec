@@ -1,6 +1,6 @@
 # ProyectoRH_Pertec
 
-1. Ejecutar los Scripts en el siguiente orden:
+1. Ejecutar los Scripts (se encuentran en la carpeta de Scripts del proyecto) en el siguiente orden:
 
 - CrearBD.sql (Crea la base de datos)
 - CrearTablaEmpleado.sql 
