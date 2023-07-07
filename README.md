@@ -1,4 +1,4 @@
-# ProyectoRH_Pertec
+# Proyecto para manejo de personal
 
 1. Ejecutar los Scripts (se encuentran en la carpeta de Scripts del proyecto) en el siguiente orden:
 
